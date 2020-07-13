@@ -58,6 +58,14 @@ nav {
     margin: auto;
 }
 
+header {
+    background-image: url('./assets/wave-mobile.png');
+    background-size: contain;
+    background-position-y: 260%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
 .header-sec {
     padding: 4rem 0;
     display: flex;
