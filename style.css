@@ -89,3 +89,58 @@ header {
     height: 4rem;
     margin-top: 1rem;
 }
+
+section.featured {
+    height: 50vh;
+}
+
+.feature-image {
+    background-image: url('./assets/bg-image-hero.png');
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+span.feature-tag {
+    background-color: #1d1b1e;
+    padding: .5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .3rem;
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+}
+
+.feature-info {
+    padding: 1.5rem .2rem;
+}
+
+.feature-info h3 {
+    color: #f1f1f1;
+    margin-bottom: .5rem;
+}
+
+.feature-info h2 {
+    line-height: 2.5rem;
+    font-weight: 700;
+}
+
+.feature-info p {
+    padding: 2rem 0;
+    font-size: 1.2rem;
+    color: #f1f1f1;
+}
+
+.btn-link {
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.btn-link .lni {
+    margin-left: 1rem;
+    font-size: 1.8rem;
+}
