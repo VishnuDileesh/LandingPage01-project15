@@ -28,6 +28,10 @@ img {
     cursor: pointer;
 }
 
+.d-only {
+    display: none;
+}
+
 .lni {
     color: white;
 }
@@ -101,8 +105,10 @@ section.featured {
 .feature-image {
     background-image: url('./assets/bg-image-hero.png');
     height: 100%;
-    object-fit: cover;
+    background-size: cover;
     position: relative;
+    background-repeat: no-repeat;
+    border-radius: .3rem;
 }
 
 span.feature-tag {
@@ -234,4 +240,167 @@ h2.footer-header {
 
 .footer-address h4 {
     margin-bottom: .5rem;
+}
+
+
+/* Small devices (576px and up) */
+
+@media (min-width: 576px) {
+
+    main {
+        margin-top: 15rem;
+    }
+
+}
+
+
+/* Medium devices (768px and up) */
+
+@media (min-width: 768px) {
+
+
+    .m-only {
+        display: none;
+    }
+
+    .d-only {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 75%
+    }
+
+    .nav-links li a {
+        font-weight: bold;
+    }
+
+    header {
+        background-image: url('./assets/wave-desktop.png');
+        background-size: cover;
+        padding-bottom: 5rem;
+    }
+
+    section.featured {
+        padding: 0 3rem;
+        margin-top: -5rem;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    main {
+        margin-top: 5rem;
+    }
+
+    .blog-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .card-image {
+        max-height: 250px;
+        max-width: 385px;
+    }
+
+    .card-image img {
+        object-fit: cover;
+        height: 180px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .para {
+        padding: 1rem 0;
+        font-size: 1rem;
+    }
+
+    .btn-link {
+        font-size: 1rem;
+    }
+
+    section.cta-sec {
+        width: 90%;
+        margin: auto;
+    }
+
+    footer {
+        background-image: url('./assets/footer-image.png');
+        background-size: contain;
+        padding-top: 2rem;
+    }
+
+    .footer-sec {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .footer-left,
+    .footer-right {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    h2.footer-header {
+        margin-top: 0;
+        font-size: 1.2rem;
+    }
+
+    footer ul {
+        margin-bottom: 0;
+    }
+
+    footer ul li a {
+        font-size: 1rem;
+    }
+
+    .form {
+        position: relative;
+        width: 30%;
+    }
+
+    .search-field {
+        color: white;
+        width: 100%;
+        outline: none;
+        border-radius: 50px;
+        border: .01rem solid #797e83;
+        padding: .8rem 1rem .8rem 2.5rem;
+        background-color: transparent;
+    }
+
+    .form .icon-search {
+        color: #797e83;
+        font-size: 1rem;
+        position: absolute;
+        left: 6%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+}
+
+
+
+/* Large devices (992px and up) */
+
+@media (min-width: 992px) {
+
+    .card-image {
+        max-width: 385px;
+        max-height: 250px;
+    }
+
 }
